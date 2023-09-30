@@ -1,0 +1,116 @@
+<!DOCTYPE HTML>
+
+<html>
+	<head>
+		<title>ihü by TEAMONE</title>
+		<link href="https://fonts.googleapis.com/css?family=Prosto+One" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Oxygen" rel="stylesheet">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
+    
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.0/jquery.min.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/4.8.1/firebase.js"></script>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+
+	</head>
+	<body class="subpage">
+
+		<!-- Header -->
+			<header id="header">
+				<div class="logo"><a href="index.html">ihü <span>by TEAMONE</span></a></div>
+				<a href="#menu">Menu</a>
+			</header>
+
+		<!-- Nav -->
+			<nav id="menu">
+				<ul class="links">
+					<li><a href="index.html">Home</a></li>
+					<li><a href="generic.html">MusixMatch</a></li>
+					
+				</ul>
+			</nav>
+
+		<!-- One -->
+			<section id="One" class="wrapper style3">
+				<div class="inner">
+					<header class="align-center">
+						<p>ihü</p>
+						<h2>Lyrics You Feel</h2>
+					</header>
+				</div>
+			</section>
+
+		<!-- Two -->
+			<section id="two" class="wrapper style2">
+				<div class="inner">
+					<div class="box">
+						<div class="content">
+							<header class="align-center">
+								<p>MusixMatch</p>
+								<h2>Get the lyrics of your recommended songs</h2>
+							</header>
+							<div id="searchArea">
+    <input id="artistSearch" placeholder="Type an Artist" /><br><br>
+    <button onclick="getLyrics()">Get Me My Lyrics!</button>
+    <button id="ghost" onclick="getLyricsNow()">Ghost</button>
+    </div> 
+    <div id="lyrics">
+    
+    </div>
+
+							<!-- EMOTIONS LOG -->
+<!-- EMOTIONS TABLE -->
+<div class="panel-body">
+   <table class="table table-hover" id="emotion-tracker">
+     <thead>
+       <tr>
+         <th>Emotion</th>
+         <th>Day of the Week</th>
+       </tr>
+     </thead>
+   </table>
+</div>
+<!-- ADD YOUR EMOTIONS -->
+ <div class="col-lg-12">
+   
+         <h1>Track your emotions</h1>
+
+   <div class="panel-body">
+       <form>
+         <div class="form-group">
+           <label for="emotion-input">Emotion</label>
+           <input class="form-control" id="emotion-input" type="text">
+         </div>
+         <div class="form-group">
+           <label for="Day">Day</label>
+           <input class="form-control" id="addDate" type="text">
+         </div>
+           <button class="btn btn-default" id="addEmotion" type="submit">Submit</button>
+       </form>
+   </div>
+  </div>
+</div>
+						</div>
+					</div>
+				</div>
+			</section>
+
+		<!-- Footer -->
+			<footer id="footer">
+				
+				<div class="copyright">
+					&copy; Untitled. All rights reserved.
+				</div>
+			</footer>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/jquery.scrollex.min.js"></script>
+			<script src="assets/js/skel.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+			<script type="text/javascript" src="assets/js/lyrics.js"></script>
+
+	</body>
+</html>
